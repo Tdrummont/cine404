@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @movie %>
+
+<% @movie.authors.each do |author| %>
+  <p>- Nome: <%= author.name %></p>
+<% end %>
+
+<hr>
+
+<%= form_with(model: @movie) do |form| %>
+  <%= form.text_area 'comments_attributes[0] [body]', rows: 8 %>
+  <%= form.submit 'Adicionar comentário' %>
+<% end %>
+<hr>
+
+<% @movie.comments.approveds.each do |comment|%>
+ <p>- <%= comment.body%></p>
+ <p>- Aprovado? <%= comment.approved.to_s %></p>
+ <% end %>
+<hr>
+
+  <div>
+  <%= link_to "Edit this movie", edit_movie_path(@movie) %> |
+  <%= link_to "Back to movies", movies_path %>
+
+  <%= button_to "Destroy this movie", @movie, method: :delete %>
+</div>
