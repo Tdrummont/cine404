@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto feito com a linguagem ruby e framework rails 
 
-Things you may want to cover:
+Cine404 simula um catalago de filmes onde o usurario pode comentar sobre os atores e filmes.
 
-* Ruby version
+Fiz sozinha.
 
-* System dependencies
+* Ruby version 3.0.4
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails version 7.0.1
